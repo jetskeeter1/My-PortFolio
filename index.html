@@ -1,0 +1,75 @@
+<!-- TODO 1: Create the HTML Boilerplate -->
+
+<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+
+<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+
+<!-- TODO 4: Add titles/subtitles etc. -->
+
+<!-- TODO 5: Add a link to the project pages -->
+
+<!-- TODO 6: Add images to show the project previews
+HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+
+<!-- TODO 7: Add the Contact Me and About Me page links -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./public/about.html">About Me</a></li>
+                <li><a href="./public/contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <div class="introduction">
+            <div class="boxleft-intro">
+                <h1 id="intro-name">Hi, I am <span id="myName">Dalton Napala</span> </h1> 
+                <h1 style="margin-top: 30px;">Welcome to My Portfolio</h1>
+                <p id="short-intro" style="margin-top: 10px;">I am a passionate UI/UX developer aiming to be a full-stack developer. I have experience in creating engaging and<br> user-friendly websites.</p>
+
+                <div class="button-intro-section">
+                    <a href="#target" class="button" id="scrollBtn">Check My Project</a>                
+                </div>
+            </div>
+            <div class="boxright-intro">
+                <img src="./assets/images/guy-laptop.png" alt="Guy sitting on the Ground with his Laptop">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container2"  id="target">
+        <div class="boxleft-intro my-project-intro">
+            <h1>This is my Project</h1>
+            <h3 style="margin: 20px;">This is my project currently learning udemy Called "The Complete Full-Stack Development Bootcamp"</h3>
+            <h2>Created by:<Span><a id="angelaUrl" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=CP260817G2#instructor-1" target="_blank" >Dr. Angela Yu, Developer and Lead Instructor</a></Span></h2>
+        </div>
+
+        <div class="boxright-intro projects-showcase">hellos</div>
+    </div>
+
+    <script>
+
+        const btn = document.getElementById('scrollBtn');
+        const target = document.getElementById('target');
+
+        btn.addEventListener('Click', ()=> target.scrollIntoView({behavior: 'Smooth'}));
+    </script>
+    
+</body>
+</html>

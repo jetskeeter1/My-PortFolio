@@ -1,0 +1,174 @@
+/* 
+$mainColor: #70FFD2;
+$secondaryColor: #FFFC8C;
+$tertiaryColor: #FFCC4D;
+$myBackgroundColor: #FF9137;
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+ */
+
+ html{
+    scroll-behavior: smooth;
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    padding: 10px 16px;
+    border-radius: 15px;
+    background-color: #70FFD2;
+    border:2px solid #41b490;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+ol{
+    list-style-type: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+ol li{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #FFCC4D;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    color: black;
+    transition: all 0.2s ease;
+}
+a:hover{
+    color: white;
+    background-color: #FF9137;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 9px 23px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 10px 0 5px 20px;
+}
+
+.container{
+    background-image: url('../assets/images/Banner-face.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.boxleft-intro{
+    padding: 40px;
+    width: 100%;
+    height: 29rem;
+    flex: 1.5;
+    text-align: start;
+}
+
+#intro-name{
+    font-size: 4.2rem;
+    font-weight: bold;
+}
+
+#myName{
+    color: #FF9137;
+}
+
+#short-intro{
+    font-size: larger;
+}
+
+.boxright-intro{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 20px;
+}
+
+.button-intro-section{
+    margin-top: 2em;
+}
+
+.button-intro-section > .button{
+    background-color: #FF9137;
+    font-size: 18px;
+    color: white;
+    
+}
+
+/* -------------------------------- Section 2 */
+
+.container2{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.my-project-intro{
+    display: flex;
+    flex: 1;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#angelaUrl{
+    margin-top: 10px;
+    color: #A435F0;
+    text-decoration: underline;
+    transition: all 0.2s ease;
+}
+
+#angelaUrl:hover{
+    color: white;
+    background-color: #A435F0;
+
+}
+
+.projects-showcase{
+    background-color: #70FFD2;
+}
