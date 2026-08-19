@@ -173,9 +173,6 @@ nav{
 
 .projects-showcase{
     background-color: #70FFD2;
-<<<<<<< Updated upstream
-}
-=======
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -216,4 +213,3 @@ nav{
     height: 100%;
     object-fit: contain;
 }
->>>>>>> Stashed changes
