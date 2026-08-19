@@ -23,16 +23,16 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Playwrite+BR+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <nav>
             <h1>My Portfolio</h1>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./public/about.html">About Me</a></li>
-                <li><a href="./public/contact.html">Contact Me</a></li>
+                <li><a href="index.html" class="top-nav-button">Home</a></li>
+                <li><a href="./public/about.html" class="top-nav-button">About Me</a></li>
+                <li><a href="./public/contact.html" class="top-nav-button">Contact Me</a></li>
             </ul>
         </nav>
 
@@ -58,13 +58,30 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
             <h1>This is my Project</h1>
             <h3 style="margin: 20px;">This is my project currently learning udemy Called "The Complete Full-Stack Development Bootcamp"</h3>
             <h2>Created by:<Span><a id="angelaUrl" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=CP260817G2#instructor-1" target="_blank" >Dr. Angela Yu, Developer and Lead Instructor</a></Span></h2>
+            <img src="./assets/images/udemy.png" alt="udemy page image to Dr.Angela Yu" width="900px" height="500px" >
         </div>
 
-        <div class="boxright-intro projects-showcase">hellos</div>
+        <div class="boxright-intro projects-showcase">
+            <div class="project-item project-item-1">
+                <a href="./public/birthday-invite.html" class="project-item-links-images">
+<img src="./assets/images/birthday-invite.png"  alt="Birthday Invite party page image">
+                </a>
+
+                <a href="./public/birthday-invite.html" class="project-item-links">Birthday Invite Party</a>
+            </div>
+
+              <div class="project-item project-item-2">
+                <a href="./public/birthday-invite.html" class="project-item-links-images">
+<img src="./assets/images/movie-ranking.png"  alt="Movie ranking page image">
+                </a>
+
+                <a href="./public/movie-ranking.html" class="project-item-links">Movie Ranking</a>
+            </div>
+        </div>
+        
     </div>
 
     <script>
-
         const btn = document.getElementById('scrollBtn');
         const target = document.getElementById('target');
 
